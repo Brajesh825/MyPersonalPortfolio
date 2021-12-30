@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+  &__info {
+    width: 50%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__header {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    padding: 0.5rem;
+    padding-left: 0;
+  }
+  h3 {
+    padding: 0.5rem;
+    padding-left: 0;
+  }
+  &__desc {
+    padding-left: 0;
+    padding: 0.5rem;
+    font-size: $font-m;
+    color: $font_secondary;
+    font-weight: bold;
+  }
+  &__logo {
+    width: 50%;
+    height: 75vh;
+    img {
+      height: 75vh;
+    }
+  }
+}
+.social {
+  a {
+    padding: 0.5rem;
+    i {
+      font-size: $font-s-m;
+    }
+  }
+}

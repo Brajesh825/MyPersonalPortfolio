@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-size: $font-s;
+  padding: $font-s;
+  text-decoration: none;
+  color: $font_primary;
+}
+
+body {
+  background-color: $primary_color;
+}
+
+h1 {
+  font-size: $font-extreme;
+  color: $font_primary;
+}
+h2 {
+  font-size: $font-xlg;
+  color: $font_primary;
+}
+h3 {
+  font-size: $font-s-m;
+  color: $font_primary;
+}
+
+.btn {
+  &__container {
+    padding-bottom: 4rem;
+  }
+  &__main {
+    border-radius: 0.5rem;
+    display: block;
+    text-align: center;
+    word-spacing: 0.25rem;
+    font-size: $font-s;
+    font-weight: 500;
+    width: 15rem;
+    line-height: 1.1;
+    color: white;
+    height: auto;
+    padding: 0.75rem;
+    background-color: $secondary_color;
+    i {
+      color: yellow;
+    }
+  }
+}
