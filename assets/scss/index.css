@@ -190,8 +190,9 @@ h3 {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  background-image: url("./../images/main.svg");
-  background-size: 10rem 10rem;
+  background-image: url("./../images/Profile.jpg");
+  background-size: 10rem;
+  background-position: 1rem 25%;
   display: none;
 }
 
