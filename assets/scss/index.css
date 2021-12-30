@@ -36,6 +36,18 @@ h3 {
   padding-bottom: 4rem;
 }
 
+@media (max-width: 63.9375em) {
+  .btn__container {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .btn__container {
+    padding-bottom: 1.75rem;
+  }
+}
+
 .btn__main {
   border-radius: 0.5rem;
   display: block;
@@ -52,7 +64,7 @@ h3 {
 }
 
 .btn__main i {
-  color: yellow;
+  color: #e2e2ca;
 }
 
 .header {
@@ -145,12 +157,47 @@ h3 {
 
 @media (max-width: 63.9375em) {
   .main {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .main {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.main__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__profile .profile_pic {
+  border: 1px solid red;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-image: url("./../images/main.svg");
+  background-size: 10rem 10rem;
+  display: none;
+}
+
+@media (max-width: 63.9375em) {
+  .main__profile .profile_pic {
+    display: block;
   }
 }
 
@@ -202,6 +249,12 @@ h3 {
   padding-left: 0;
 }
 
+@media (max-width: 87.4375em) {
+  .main h1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 63.9375em) {
   .main h1 {
     font-size: 3.125rem;
@@ -219,9 +272,9 @@ h3 {
   padding-left: 0;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 87.4375em) {
   .main h3 {
-    font-size: 1.25rem;
+    font-size: 1.875rem;
   }
 }
 
@@ -232,11 +285,18 @@ h3 {
 }
 
 .main__desc {
+  text-align: justify;
+  padding: 0.5rem 1rem;
   padding-left: 0;
-  padding: 0.5rem;
   font-size: 2.5rem;
   color: #7f8daa;
   font-weight: bold;
+}
+
+@media (max-width: 87.4375em) {
+  .main__desc {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 63.9375em) {
@@ -282,6 +342,12 @@ h3 {
   }
 }
 
+@media (max-width: 39.9375em) {
+  .social {
+    margin: 1rem 0;
+  }
+}
+
 .social a {
   padding: 0.5rem;
 }
@@ -305,7 +371,7 @@ h3 {
 @media (max-width: 39.9375em) {
   .whatido h1 {
     margin: 1.5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

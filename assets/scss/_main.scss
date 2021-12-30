@@ -5,9 +5,32 @@
   margin-right: 5rem;
 
   @include breakpoint-down(medium) {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     flex-direction: column;
+  }
+  @include breakpoint-down(small) {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  &__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .profile_pic {
+      border: 1px solid red;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      background-image: url("./../images/main.svg");
+      background-size: 10rem 10rem;
+
+      display: none;
+      @include breakpoint-down(medium) {
+        display: block;
+      }
+    }
   }
 
   &__info {
@@ -35,6 +58,9 @@
   h1 {
     padding: 0.5rem;
     padding-left: 0;
+    @include breakpoint-down(large) {
+      font-size: $font-m;
+    }
     @include breakpoint-down(medium) {
       font-size: $font-m-l;
     }
@@ -45,19 +71,23 @@
   h3 {
     padding: 0.5rem;
     padding-left: 0;
-    @include breakpoint-down(medium) {
-      font-size: $font-s;
+    @include breakpoint-down(large) {
+      font-size: $font-s-m;
     }
     @include breakpoint-down(medium) {
       font-size: $font-s;
     }
   }
   &__desc {
+    text-align: justify;
+    padding: 0.5rem 1rem;
     padding-left: 0;
-    padding: 0.5rem;
     font-size: $font-m;
     color: $font_secondary;
     font-weight: bold;
+    @include breakpoint-down(large) {
+      font-size: 2rem;
+    }
     @include breakpoint-down(medium) {
       font-size: $font-s-m;
     }
@@ -86,6 +116,9 @@
   @include breakpoint-down(medium) {
     padding: 1rem;
     margin: 1rem;
+  }
+  @include breakpoint-down(small) {
+    margin: 1rem 0;
   }
   a {
     padding: 0.5rem;
