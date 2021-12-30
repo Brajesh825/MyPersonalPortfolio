@@ -2,6 +2,14 @@
   h1 {
     margin: 7rem;
     text-align: center;
+    @include breakpoint-down(medium) {
+      margin: 2rem;
+      font-size: $font-m-l;
+    }
+    @include breakpoint-down(small) {
+      margin: 1.5rem;
+      font-size: $font-m;
+    }
   }
 }
 
@@ -11,10 +19,18 @@
   margin-right: 5rem;
   display: flex;
   flex-direction: row;
+  @include breakpoint-down(medium) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: auto;
+  }
 
   .image {
     height: 60vh;
     width: 50%;
+    @include breakpoint-down(medium) {
+      display: none;
+    }
 
     img {
       height: 60vh;
@@ -24,9 +40,23 @@
   .desc {
     width: 50%;
     height: 60vh;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint-down(medium) {
+      width: 100%;
+      height: auto;
+      align-items: center;
+    }
 
     h2 {
       padding: 1rem;
+      @include breakpoint-down(medium) {
+        text-align: center;
+        font-size: $font-m;
+      }
+      @include breakpoint-down(small) {
+        font-size: $font-s-m;
+      }
     }
     .list {
       padding: 1rem;
@@ -35,19 +65,26 @@
         padding: 0.25rem;
         color: $secondary_color;
         font-size: $font-m-l;
-
-        + :hover {
+        @include breakpoint-down(medium) {
+          font-size: $font-s-m;
         }
       }
     }
     ul {
       margin-top: 1rem;
       list-style-type: "⚡";
+      @include breakpoint-down(medium) {
+        margin-left: 1rem;
+      }
     }
     li {
       margin-bottom: 1rem;
       font-size: $font-s;
       color: $font_tertiary;
+      @include breakpoint-down(medium) {
+        margin-left: 1rem;
+        font-size: $font-vs;
+      }
     }
   }
 }

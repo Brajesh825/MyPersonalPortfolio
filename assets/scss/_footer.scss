@@ -1,5 +1,8 @@
 .footer {
   h3 {
     text-align: center;
+    @include breakpoint-down(small) {
+      font-size: $font-s;
+    }
   }
 }

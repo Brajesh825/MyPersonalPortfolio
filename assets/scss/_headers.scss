@@ -2,6 +2,21 @@
   margin: 1.25rem 5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  @include breakpoint-down(small) {
+    margin: 1.25rem 1.25rem;
+  }
+}
+
+.hamburger {
+  display: none;
+  @include breakpoint-down(medium) {
+    display: block;
+    font-size: $font-m;
+  }
+  @include breakpoint-down(small) {
+    font-size: $font-s-m;
+  }
 }
 
 .logo {
@@ -11,6 +26,9 @@
 
   img {
     height: 2.5rem;
+    @include breakpoint-down(small) {
+      height: 2.2rem;
+    }
   }
 }
 
@@ -18,4 +36,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include breakpoint-down(medium) {
+    display: none;
+  }
 }

@@ -4,25 +4,53 @@
   margin-left: 5rem;
   margin-right: 5rem;
 
+  @include breakpoint-down(medium) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+  }
+
   &__info {
     width: 50%;
     height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+      height: auto;
+      align-items: center;
+    }
   }
   &__header {
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
+    @include breakpoint-down(medium) {
+      padding-top: 0;
+      text-align: center;
+    }
   }
   h1 {
     padding: 0.5rem;
     padding-left: 0;
+    @include breakpoint-down(medium) {
+      font-size: $font-m-l;
+    }
+    @include breakpoint-down(small) {
+      font-size: $font-m;
+    }
   }
   h3 {
     padding: 0.5rem;
     padding-left: 0;
+    @include breakpoint-down(medium) {
+      font-size: $font-s;
+    }
+    @include breakpoint-down(medium) {
+      font-size: $font-s;
+    }
   }
   &__desc {
     padding-left: 0;
@@ -30,16 +58,35 @@
     font-size: $font-m;
     color: $font_secondary;
     font-weight: bold;
+    @include breakpoint-down(medium) {
+      font-size: $font-s-m;
+    }
+    @include breakpoint-down(small) {
+      font-size: $font-s;
+    }
   }
   &__logo {
     width: 50%;
     height: 75vh;
+    @include breakpoint-down(medium) {
+      width: 100%;
+      height: auto;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
     img {
       height: 75vh;
+      @include breakpoint-down(medium) {
+        display: none;
+      }
     }
   }
 }
 .social {
+  @include breakpoint-down(medium) {
+    padding: 1rem;
+    margin: 1rem;
+  }
   a {
     padding: 0.5rem;
     i {
