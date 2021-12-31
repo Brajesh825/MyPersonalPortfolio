@@ -1,0 +1,93 @@
+.degree {
+  margin: 1rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include breakpoint-down(small) {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  @include breakpoint-down(small) {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  h2 {
+    padding: 2rem;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 65rem;
+    border-radius: 1rem;
+    .btn__container {
+      padding: 1.5rem 2.25rem;
+      padding-top: 0.425rem;
+      background-color: rgb(243, 231, 236);
+      border-radius: 0 0 1rem 1rem;
+      @include breakpoint-down(medium) {
+        padding-left: 1rem;
+      }
+    }
+    @include breakpoint-down(medium) {
+      padding-left: 1rem;
+    }
+  }
+
+  &__header {
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: pink;
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+    }
+
+    p {
+      padding: 0.75 0rem;
+    }
+  }
+
+  &__main {
+    padding-left: 2.25rem;
+    background-color: rgb(245, 233, 238);
+    li {
+      color: rgb(71, 19, 19);
+      font-weight: 200;
+    }
+    @include breakpoint-down(medium) {
+      padding-left: 1rem;
+    }
+    @include breakpoint-down(small) {
+      padding-left: 0.5rem;
+    }
+  }
+
+  .logo__container {
+    margin: 2rem;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    img {
+      width: 10rem;
+      border-radius: 50%;
+    }
+  }
+}

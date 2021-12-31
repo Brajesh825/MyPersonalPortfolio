@@ -18,14 +18,54 @@ body {
 h1 {
   font-size: $font-extreme;
   color: $font_primary;
+
+  @include breakpoint-down(large) {
+    font-size: $font-m;
+  }
+  @include breakpoint-down(medium) {
+    font-size: $font-m-l;
+  }
+  @include breakpoint-down(small) {
+    font-size: $font-m;
+  }
 }
+
 h2 {
-  font-size: $font-xlg;
+  font-size: $font-lg;
   color: $font_primary;
+  @include breakpoint-down(large) {
+    font-size: $font-m-l;
+  }
+  @include breakpoint-down(medium) {
+    font-size: $font-m;
+  }
+  @include breakpoint-down(small) {
+    font-size: $font-s-m;
+  }
 }
 h3 {
   font-size: $font-s-m;
   color: $font_primary;
+  @include breakpoint-down(large) {
+    font-size: $font-s-m;
+  }
+  @include breakpoint-down(medium) {
+    font-size: $font-s;
+  }
+}
+h4 {
+  font-size: $font-sx;
+  color: $font_primary;
+  font-weight: 200;
+  @include breakpoint-down(large) {
+    font-size: $font-s;
+  }
+  @include breakpoint-down(medium) {
+    font-size: $font-vs;
+  }
+  @include breakpoint-down(small) {
+    font-size: $font-es;
+  }
 }
 
 .btn {
@@ -54,5 +94,25 @@ h3 {
     i {
       color: rgb(226, 226, 202);
     }
+  }
+}
+
+ul {
+  margin-top: 1rem;
+  list-style-type: "⚡";
+  @include breakpoint-down(medium) {
+    margin-left: 1rem;
+  }
+}
+li {
+  margin-bottom: 1rem;
+  font-size: $font-s;
+  color: $font_tertiary;
+  @include breakpoint-down(medium) {
+    margin-left: 1rem;
+    font-size: $font-vs;
+  }
+  @include breakpoint-down(small) {
+    margin-left: 0.75rem;
   }
 }

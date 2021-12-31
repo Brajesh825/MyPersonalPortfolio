@@ -70,21 +70,5 @@
         }
       }
     }
-    ul {
-      margin-top: 1rem;
-      list-style-type: "⚡";
-      @include breakpoint-down(medium) {
-        margin-left: 1rem;
-      }
-    }
-    li {
-      margin-bottom: 1rem;
-      font-size: $font-s;
-      color: $font_tertiary;
-      @include breakpoint-down(medium) {
-        margin-left: 1rem;
-        font-size: $font-vs;
-      }
-    }
   }
 }
