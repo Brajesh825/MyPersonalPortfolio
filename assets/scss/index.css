@@ -103,6 +103,22 @@ h3 {
   }
 }
 
+.hamburger .cross {
+  display: none;
+}
+
+.hamburger .cross_visible {
+  display: inline-block;
+}
+
+.hamburger .bar {
+  display: block;
+}
+
+.hamburger .bar_invisible {
+  display: none;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,6 +157,38 @@ h3 {
   .navbar {
     display: none;
   }
+}
+
+.menu_item {
+  position: fixed;
+  background-color: #edf9fe;
+  width: 100vw;
+  height: 90vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu_list a {
+  font-size: 1.875rem;
+  padding: 1.5rem;
+}
+
+.menu_on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main {
@@ -350,7 +398,7 @@ h3 {
 }
 
 .social a {
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .social a i {

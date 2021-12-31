@@ -17,6 +17,18 @@
   @include breakpoint-down(small) {
     font-size: $font-s-m;
   }
+  .cross {
+    display: none;
+  }
+  .cross_visible {
+    display: inline-block;
+  }
+  .bar {
+    display: block;
+  }
+  .bar_invisible {
+    display: none;
+  }
 }
 
 .logo {

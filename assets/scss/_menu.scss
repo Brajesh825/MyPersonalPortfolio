@@ -1,0 +1,23 @@
+.menu_item {
+  position: fixed;
+  background-color: $primary_color;
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  //   align-items: center;
+  display: none;
+}
+
+.menu_list {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    font-size: $font-s-m;
+    padding: 1.5rem;
+  }
+}
+
+.menu_on {
+  display: flex;
+}
