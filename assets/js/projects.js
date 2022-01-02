@@ -1,10 +1,34 @@
 const projects = [
   {
-    title: "Portfolio",
+    title: "My Personal Portfolio",
     summary:
       "The complete portfolio website hosted using github pages (gh-pages). Visit the website here",
     date: "2020-03-06",
     technology: ["html5", "css3", "js", "sass"],
+    link: "https://github.com/Brajesh825/MyPersonalPortfolio",
+  },
+  {
+    title: "Mern Ecommerce",
+    summary:
+      "Ecommerce website made using Mern stack . Backend is completed ,Frontend in development",
+    date: "ongoing",
+    technology: ["html5", "css3", "js", "node", "react"],
+    link: "https://github.com/Brajesh825/MERN-Ecommerce",
+  },
+  {
+    title: "Node Projects",
+    summary:
+      "Cluster of projects made using node js like ecommerce api,task manager,store api and jobs api",
+    date: "2020-03-06",
+    technology: ["html5", "css3", "js", "node"],
+    link: "https://github.com/Brajesh825/NodeProjects",
+  },
+  {
+    title: "Frontend Projects",
+    summary: "A repository containing various of my front end works",
+    date: "2020-03-06",
+    technology: ["html5", "css3", "js", "sass"],
+    link: "https://github.com/Brajesh825/FrontendProjects",
   },
 ];
 
@@ -17,6 +41,7 @@ function render() {
       technology += `<i class="fab fa-${tech}" title="${tech}"></i>`;
     });
     projectContainer.innerHTML += `
+    <a href="${project.link}" target="_blank">
         <div class="project__item" style="background-color:  ${
           randomColor() + "33"
         } ">
@@ -25,7 +50,7 @@ function render() {
           <h4>
            ${project.summary}
           </h4>
-        </div>
+        </div>  
         <div class="project__footer">
           <h5>${project.date}</h5>
           <div class="tech__used">
@@ -33,6 +58,7 @@ function render() {
           </div>
         </div>
       </div>
+      </a>
       `;
   });
 }
