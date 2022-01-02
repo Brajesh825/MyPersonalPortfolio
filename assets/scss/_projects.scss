@@ -1,0 +1,48 @@
+.project__container {
+  margin: 5rem 5rem 5rem 5rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @include breakpoint-down(medium) {
+    margin: 1.5rem 2.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  @include breakpoint-down(small) {
+    margin: 1rem 1rem;
+    grid-template-columns: 1fr;
+  }
+  grid-gap: 2rem 3rem;
+}
+
+.project__item {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.project__details {
+  padding: 1rem 0;
+}
+
+.project__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h5 {
+    font-weight: 500;
+  }
+}
+
+.tech__used {
+  i {
+    padding: 0.25rem;
+    font-size: $font-s-m;
+    @include breakpoint-down(medium) {
+      font-size: 2rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: $font-s;
+    }
+  }
+}
