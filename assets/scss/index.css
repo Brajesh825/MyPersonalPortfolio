@@ -10,16 +10,16 @@ a {
   font-size: 1.25rem;
   padding: 1.25rem;
   text-decoration: none;
-  color: #001c55;
+  color: #082563;
 }
 
 body {
-  background-color: #edf9fe;
+  background-color: white;
 }
 
 h1 {
   font-size: 4.325rem;
-  color: #001c55;
+  color: #082563;
 }
 
 @media (max-width: 87.4375em) {
@@ -42,7 +42,7 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
-  color: #001c55;
+  color: #082563;
 }
 
 @media (max-width: 87.4375em) {
@@ -65,7 +65,7 @@ h2 {
 
 h3 {
   font-size: 1.875rem;
-  color: #001c55;
+  color: #082563;
 }
 
 @media (max-width: 87.4375em) {
@@ -82,7 +82,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
-  color: #001c55;
+  color: #082563;
   font-weight: 300;
 }
 
@@ -106,12 +106,12 @@ h4 {
 
 h4 {
   text-align: justify;
-  color: #001c55;
+  color: #082563;
 }
 
 h5 {
   font-size: 1.125rem;
-  color: #8c9eb8;
+  color: #526580;
   font-weight: normal;
 }
 
@@ -161,7 +161,7 @@ h5 {
   color: white;
   height: auto;
   padding: 0.75rem;
-  background-color: #001c55;
+  background-color: #0b368b;
 }
 
 .btn__main i {
@@ -182,7 +182,7 @@ ul {
 li {
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  color: #8c9eb8;
+  color: #526580;
 }
 
 @media (max-width: 63.9375em) {
@@ -292,7 +292,7 @@ li {
 
 .menu_item {
   position: fixed;
-  background-color: #edf9fe;
+  background-color: white;
   width: 100vw;
   height: 90vh;
   -webkit-box-pack: center;
@@ -473,7 +473,7 @@ li {
   padding: 0.5rem 1rem;
   padding-left: 0;
   font-size: 2.5rem;
-  color: #7f8daa;
+  color: #31293f;
   font-weight: bold;
 }
 
@@ -641,7 +641,7 @@ li {
 
 .workComponent .desc .list i {
   padding: 0.25rem;
-  color: #001c55;
+  color: #0b368b;
   font-size: 3.125rem;
 }
 
@@ -1166,6 +1166,11 @@ li {
 .project__item {
   padding: 1rem 1.5rem;
   border-radius: 1rem;
+}
+
+.project__item a {
+  padding: 0.25rem 0;
+  font-size: 1rem;
 }
 
 .project__details {

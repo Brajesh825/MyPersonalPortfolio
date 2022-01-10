@@ -18,6 +18,10 @@
 .project__item {
   padding: 1rem 1.5rem;
   border-radius: 1rem;
+  a {
+    padding: 0.25rem 0;
+    font-size: 1rem;
+  }
 }
 
 .project__details {
