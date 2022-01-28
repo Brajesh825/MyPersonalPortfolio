@@ -827,6 +827,7 @@ li {
   width: 80vw;
   max-width: 65rem;
   border-radius: 1rem;
+  padding-top: 0.75rem;
 }
 
 .degree__desc .btn__container {
